@@ -1,15 +1,15 @@
-using LeetCode.MaximumSwap;
+using LeetCode.MaximumOddBinaryNumber;
 
-namespace LeetCode.Test.MaximumSwap
+namespace LeetCode.Test.MaximumOddBinaryNumber
 {
     public class MaximumOddBinaryNumberTest
     {
 
         [Theory]
         [MemberData(nameof(TestDataProvider.GetSolutions), MemberType = typeof(TestDataProvider))]
-        public void Test(ISolution solution, int input, int expected)
+        public void Test(ISolution solution, string input, string expected)
         {
-            var actual = solution.MaximumSwap(input);
+            var actual = solution.MaximumOddBinaryNumber(input);
             Assert.Equal(expected, actual);
         }
     }
